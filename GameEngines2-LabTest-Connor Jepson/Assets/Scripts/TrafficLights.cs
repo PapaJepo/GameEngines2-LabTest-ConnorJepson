@@ -16,11 +16,6 @@ public class TrafficLights : MonoBehaviour
         SpawnTrafficLights();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     void SpawnTrafficLights()
     {
         trafficlights.Clear();
@@ -37,8 +32,6 @@ public class TrafficLights : MonoBehaviour
             Cylinder.transform.parent = this.transform;
         }
     }
-
-   
 
     public void OnDrawGizmos()
     {

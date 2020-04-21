@@ -72,38 +72,4 @@ public class TrafficLightStates : MonoBehaviour
             }
         }
     }
-
-    /*
-    void Green()
-    {
-        var ObjRenderer = GetComponent<Renderer>();
-        ObjRenderer.material.SetColor("_Color", Color.green);
-
-        StartCoroutine(Timer(4.0f, State.Yellow));
-    }
-
-    void Yellow()
-    {
-        var ObjRenderer = GetComponent<Renderer>();
-        ObjRenderer.material.SetColor("_Color", Color.yellow);
-
-        StartCoroutine(Timer(4.0f, State.Red));
-    }
-
-    void Red()
-    {
-        var ObjRenderer = GetComponent<Renderer>();
-        ObjRenderer.material.SetColor("_Color", Color.red);
-
-        StartCoroutine(Timer(4.0f, State.Green));
-    }
-
-   
-    IEnumerator Timer(float time, State stateNew)
-    {
-        yield return new WaitForSeconds(time);
-        state = stateNew;
-    }
-    */
-    
 }
